@@ -1,0 +1,81 @@
+#!/usr/bin/python
+import sys
+import shlex
+
+#issue usage error and exit(1) if 3 perams are not specified
+if len(sys.argv) != 4:
+	print("Usage:./filemaker INPUTCOMMANDFILE OUTPUTFILE RECORDCOUNT")
+	exit(1)
+
+
+#issue Error and exit(1) if not able to open the two files
+try:
+	iFile = open(sys.argv[1], 'r')
+except:
+	print('Error')
+	exit(1)
+try:
+	oFile = open(sys.argv[2], 'r')
+except:
+	print('error')
+	exit(1)
+
+
+#preprocess headers and files only once
+commands = []
+
+for line in inputCmdFile:	
+	t[0] = shlex.split(line)
+	if (t.upper() == 'HEADER'):
+		oFile.write([1].decode('string_escape'))
+	#if (t.upper() == 'STRING'||t.upper() == 'NUMBER'||t.upper() == 'REFER'):
+		
+
+outputFile.close()
+	#write any header strings immediately to the output file
+	
+	#Fileword commands slurp the entire file as a single list into dictionary called randomFiles, name of file as key
+
+	#append all commands except header to a list called commands for later execution
+
+#do following for each record
+
+	#delete everthing in dictionary randomData
+	
+	#generate Random Data and populate dict randomData using random number generators and file data
+
+	#generate output from commands and dictionary randomData
+
+#generate random data for each line int he commands list, for each command:
+
+	#if REFER or STRING skip it, deal with themt he next pass
+	
+	#if it is a LABEL, using the label as the key look in the randomData dict for that label if exists issue with error
+	#and exit(1)
+
+	#obtain the random data FILEWORD NUMBER and store with the label as the key in the dict randomData
+		
+		#FILEWORD: use random number as subscript to the dict of words from the file the name of the file is the key to
+		#the list of words in the dict randomFiles use 0 as min and len(randomFiles[LABEL])-1 as max
+		
+		#number generate a random number using random.randint(min,max)
+
+#generate output for each command in the command list
+
+	#STRING: write the string to the output file
+
+	#RANDOM write tot he output file the random number stored in randomData using the label as the key
+
+	#FILEWORD: write tot he file the random word stored in randomData using the label as the key
+
+	#REFER: write tot he file the random data stored in randomData using the label as the key
+
+
+
+
+
+#dict1 = {}
+
+
+
+
